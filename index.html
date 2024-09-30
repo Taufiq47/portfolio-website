@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav>
+            <h1 class="logo" data-scroll data-scroll-speed="2">TEKNIK</h1>
+            <ul>
+                <li data-scroll><a href="#">About</a></li>
+                <li data-scroll><a href="#">Skill</a></li>
+                <li data-scroll><a href="#">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main data-scroll-section>
+        <div class="container">
+            <section class="about" data-scroll-section>
+                <div class="tentang" data-scroll data-scroll-speed="2">
+                    <p>Halo, nama saya <span style="color: bisque;">Muh. Taufiq Kamal.</span> seorang mahasiswa dari
+                        Universitas Hasanuddin yang suka main game dan baca komik.</p>
+                    <p class="hope">Teknik Informatika UNHAS</p>
+                </div>
+                <div class="image-name" data-scroll data-scroll-speed="1">
+                    <p>Muhammad Taufiq Kamal</p>
+                    <img class="my-image" src="betul.jpeg" alt="my image">
+                </div>
+            </section>
+
+            <hr style="border-color: black; width: 80%; margin: auto;" data-scroll-section>
+
+            <section class="skill" data-scroll-section="">
+                <h1 data-scroll>Skill :</h1>
+                <div class="skill-list" data-scroll>
+                    <img src="html.svg" alt="HTML Icon" data-scroll-class="scroll" data-scroll data-scroll-speed="3">
+                    <img src="css.svg" alt="CSS Icon" data-scroll-class="scroll" data-scroll data-scroll-speed="4">
+                    <img src="js.svg" alt="JS Icon" data-scroll-class="scroll" data-scroll data-scroll-speed="5">
+                </div>
+            </section>
+
+            <section class="project" data-scroll-section>
+                <h1 data-scroll>Project :</h1>
+                <div class="project-list" data-scroll>
+                    <div class="card" data-scroll data-scroll-speed="1">
+                        <div class="img">
+                            <h1>Project 1</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto nemo tempore quidem odit quos similique exercitationem modi. Aut ducimus iure eius ipsam consequuntur. Omnis blanditiis vel sint laborum a.</p>
+                    </div>
+                    <div class="card last-section" data-scroll data-scroll-speed="1">
+                        <div class="img">
+                            <h1>Project 2</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto nemo tempore quidem odit quos similique exercitationem modi. Aut ducimus iure eius ipsam consequuntur. Omnis blanditiis vel sint laborum a.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <script>
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+</body>
+
+</html>

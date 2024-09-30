@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.logo {
+    font-size: 30px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 84px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li, a {
+    display: inline;
+    font-size: 20px;
+    color: black;
+}
+
+main {
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.tentang {
+    color: black;
+    font-size: 23px;
+    margin: auto 0;
+    width: 400px;
+    height: 256px;
+    position: relative;
+}
+
+.hope {
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+.image-name {
+    position: relative;
+}
+
+.image-name p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.image-name p{
+    color: white;
+    position: absolute;
+    width: 280px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    left: -100px;
+    bottom: 40px;
+    text-align: center;
+}
+
+.my-image {
+    width: 358px;
+    max-height: 448px;
+    object-fit: cover;
+    border-radius: 150px 150px 10px 10px;
+}
+
+.skill, .project {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.skill-list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.skill-list img {
+    width: 96px;
+    height: 96px;
+}
+
+.project-list {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.card .img {
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    background-color: bisque;
+}
+
+.card .img h1 {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.card p {
+    margin: 20px;
+}
+
+.img-skill {
+    opacity: 0;
+    transition: opacity .6s;
+}
+
+.scroll {
+    opacity: 1;
+}
+
